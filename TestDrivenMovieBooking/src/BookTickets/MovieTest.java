@@ -52,11 +52,16 @@ class MovieTest {
 	@Test
 	void BookingMultiple() {
 		Booking group1 = new Booking(1,Arrays.asList("A8","A9"));
-		Booking group2 = new Booking(1,Arrays.asList("A8","A9"));
-		Booking group3 = new Booking(2,Arrays.asList("A8","A9"));
 		int ans1 = group1.book();
+		
+		Booking group2 = new Booking(1,Arrays.asList("A8","A9"));
 		int ans2 = group2.book();
+		
+		Booking group3 = new Booking(2,Arrays.asList("A8","A9"));
 		int ans3  = group3.book();
+		
+		
+		
 	}
 
 }

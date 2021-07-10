@@ -44,7 +44,7 @@ public class Booking {
 			return 1;
 		}
 		else if(ShowNo == 2 && Validate.validate() == true) {
-			System.out.println("The Ticket Have Been Booked!!!");
+			System.out.println("Booking succesfull");
 			System.out.println("Available Seats:");
 			
 			
@@ -67,6 +67,7 @@ public class Booking {
 			return 1;
 		}
 		System.out.println("Seats are not available");
+		System.out.println();
 		return 0;
 		
 	}
