@@ -10,12 +10,11 @@ public class Validation {
 	Validation(int ShowNo, List<String> seats){
 		this.ShowNo = ShowNo;
 		this.seats = seats;
-		//count ++;
+		
 		
 	}
 	public Boolean validate() {
-		// TODO Auto-generated method stub
-		//System.out.println("Group"+count);
+		
 		if(seats.size() == 0) {
 			return false;
 		}

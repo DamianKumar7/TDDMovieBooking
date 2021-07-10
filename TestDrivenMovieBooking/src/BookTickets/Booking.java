@@ -20,7 +20,7 @@ public class Booking {
 		System.out.println("Requested Seats:"+ Seats);
 		Validation Validate = new Validation(ShowNo,Seats);
 		if(ShowNo == 1 && Validate.validate() == true) {
-			System.out.println("The Ticket Have Been Booked!!!");
+			System.out.println("Booking Succesfull");
 			System.out.println("Available Seats:");
 			
 			
@@ -37,6 +37,8 @@ public class Booking {
 				System.out.print(Seats.get(i) + " ");
 			}
 			System.out.println();
+			System.out.println();
+			
 			
 			
 			return 1;
@@ -59,6 +61,7 @@ public class Booking {
 				System.out.print(Seats.get(i) + " ");
 			}
 			System.out.println();
+			System.out.println();
 			
 			
 			return 1;
@@ -70,3 +73,38 @@ public class Booking {
 	
 
 }
+
+
+
+/*Output
+ * Group1
+Requested Seats:[A6, A7]
+The Ticket Have Been Booked!!!
+Available Seats:
+B1 A1 B2 A2 B3 A3 B4 A4 B5 A5 A8 A9 
+Booked Seats:
+A6 A7 
+Group2
+Requested Seats:[A6, A7]
+The Ticket Have Been Booked!!!
+Available Seats:
+A1 A2 A3 A4 A5 A8 A9 
+Booked Seats:
+A6 A7 
+Group5
+Requested Seats:[A8, A9]
+The Ticket Have Been Booked!!!
+Available Seats:
+A1 A2 A3 A4 A5 
+Booked Seats:
+A8 A9 
+Group5
+Requested Seats:[A8, A9]
+Seats are not available
+Group5
+Requested Seats:[A8, A9]
+The Ticket Have Been Booked!!!
+Available Seats:
+B1 A1 B2 A2 B3 A3 B4 A4 B5 A5 
+Booked Seats:
+A8 A9 */
